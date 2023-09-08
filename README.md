@@ -8,8 +8,9 @@ This website was created for the purpose of giving the user another text editing
 
 Through the implementation of various development packages, I was able to modify the code to create a PWA application that works the same as the code originally provided but optimized and also downloadable to be used as a desktop application that can function online as well as offline.
 
+I had many issues with this project that I'm still trying to work though. Most of it is set up the way I intended, yet the program isn't running correctly on my computer. My hope is to return to this project and modify it so that it works correctly.
 
-[Here is the URL of the deployed application]().
+[Here is the URL of the deployed application](https://rocky-fjord-21364-7a3054fb5079.herokuapp.com/).
 
 ---
 ---
@@ -17,8 +18,6 @@ Through the implementation of various development packages, I was able to modify
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [PWA Elements](#pwa-elements)
 - [Credits](#credits)
 - [License](#license)
 
@@ -27,32 +26,15 @@ Through the implementation of various development packages, I was able to modify
 
 ## Installation
 
+Feel free to use these built in scripts in your terminal with the prefice "npm run"
 
+- start:dev (concurrently \cd server && npm run server\ \cd client && npm run dev\)
+- start (npm run build && cd server && node server.js)
+- server (cd server nodemon server.js --ignore client)
+- build (cd client && npm run build)
+- install (cd server && npm i && cd ../client && npm i)
+- client (cd client && npm start)
 
----
-
-## Usage
-
-### Add Text
-![Add Text Gif](assets "Add Text Gif")
-
-### Install Application
-![Install Application Gif](assets  Install Application Gif")
-
----
-
-## PWA Elements
-
-The key to this project was to utilize the working code provided and optimize it by converting it into a progressive web application (PWA). Here are the specifics about the elements that converted the original text editor application into a PWA application.
-
-### Manifest.json File
-![Manifest Screenshot](assets "Manifest")
-
-### Registered Service Worker
-![Registered Service Worker Screenshot](assets "Registered Service Worker")
-
-### IndexedDB Storage
-![IndexedDB Storage Screenshot](assets "IndexedDB Storage")
 
 ---
 
